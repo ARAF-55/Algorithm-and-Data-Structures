@@ -1,0 +1,15 @@
+import multiprocessing
+
+customQueue = multiprocessing.Queue(maxsize=3)
+print(customQueue.qsize())
+customQueue.put(1)
+customQueue.put(2)
+customQueue.put(3)
+print(customQueue)
+print(customQueue.qsize())
+print(customQueue.get())
+print(customQueue.qsize())
+print(customQueue)
+customQueue.put(4)
+print(customQueue.empty())
+print(customQueue.full())
